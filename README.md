@@ -1,4 +1,4 @@
-# Brochure style website for Upper Iowa Tool & Die Custom Injection Mold & Tooling
+## Brochure style website for Upper Iowa Tool & Die Custom Injection Mold & Tooling
 
 ### :wrench: :nut_and_bolt: Built with [Astro](https://astro.build/)
 
