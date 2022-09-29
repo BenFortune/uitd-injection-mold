@@ -1,0 +1,77 @@
+---
+export interface Props {
+	title: string;
+	body: string;
+    imageSrc: string;
+    altText: string;
+}
+
+const { title, body, imageSrc, altText } = Astro.props;
+---
+
+<li>
+    <section class="section-image-wrapper">
+        <img src={imageSrc} alt={altText}>
+    </section>
+    <h2>{title}</h2>
+    <p>{body}</p>
+    <!-- TODO: Add the following back in once the services pages are built out -->
+    <!-- <a href={href}>Learn More</a> -->
+</li>
+
+<style>    
+    li {
+        display: inline-block;
+        width: 30%;
+        margin: 0 60px;
+        text-align: center;
+        list-style-type: none;
+    }
+
+    li .section-image-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 128px;
+        height: 128px;
+        margin: 0 auto;
+        padding: 5px;
+        border-radius: 100px;
+        background: #FFF none;
+    }
+
+    li .section-image-wrapper img {
+        display: block;
+        width: 84px;
+        height: 84px;
+    }
+
+    li h2 {
+        margin-bottom: 20px;
+        font-family: 'Lalezar', sans-serif;
+        font-size: 48px;
+        color: #FFF
+    }
+
+    li p {
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 1.5;
+        color: #FFF;
+    }
+
+    li a {
+        padding: 10px 15px;
+        color: #FFF;
+        border: 2px solid #FFF;
+        border-radius: 6px
+    }
+
+    @media (max-width: 1024px) {
+        li {
+            display: block;
+            width: 100%;
+            margin: 0 0 40px 0;
+        }
+    }
+</style>

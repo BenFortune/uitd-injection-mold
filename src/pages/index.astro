@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import Experience from '../components/Experience.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Upper Iowa Tool & Die Custom Mold & Tooling | Home">
+	<Header />
+	<main>
+		<section class="services-section">
+			<ul role="list">
+				<ServiceCard
+					title="Mold Design"
+					body="While injection molding is the final product, the process starts with tooling. Our tool makers can fabricate the tool to produce the injection molded part."
+					imageSrc="images/design-icon.png"
+					altText="Mold Design Icon"
+
+				/>
+				<ServiceCard
+					title="Mold Production"
+					body="Our Cincinnati Milacron MH400 is capable of handling most injection mold jobs big and small. If your injection molded part requires annealing we can perform that in our JP Industrial Oven."
+					imageSrc="images/tools-icon.png"
+					altText="Mold Production Icon"
+				/>
+				<ServiceCard
+					title="Mold Measuring"
+					body="Need PPAP services? Our team of CMM trained technicians can provide the data needed to assure the injection molded part meets your specific tolerances."
+					imageSrc="images/measuring-icon.png"
+					altText="Mold Measuring Icon"
+				/>
+			</ul>
+		</section>
+		<Experience />
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	:root {
+		--primary-green: #01d414; /* For reference only, not used in code */
+		font-family: 'Mulish', sans-serif;
+	}
+
+	.services-section {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		justify-items: center;
+		padding: 80px 40px;
+		background: #212ead none;
+	}
+
+	.services-section ul {
+		display: flex;
+		align-items: center;
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	@media (max-width: 1024px) {
+		.services-section {
+			display: block;
+			padding: 40px;
+		}
+
+		.services-section ul {
+			display: block;
+		}
+	}
+</style>

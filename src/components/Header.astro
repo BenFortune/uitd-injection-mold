@@ -1,0 +1,170 @@
+<header>
+    <section class="contact-section">
+        <svg xmlns="http://www.w3.org/2000/svg" class="map-marker-svg" viewBox="0 0 256 256" height="22" width="22"><path fill="none" d="M0 0h256v256H0z"/><circle cx="128" cy="104" r="32" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/><path fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M208 104c0 72-80 128-80 128s-80-56-80-128a80 80 0 0 1 160 0Z"/></svg>
+            956 6th Ave W Cresco, IA 52136 
+        <span class="separator">|</span>
+        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 29 29" height="22" width="22" fill="#FFF" xml:space="preserve"><path d="M20.666 27.021a5.907 5.907 0 0 1-2.934-.779l-.126-.071A39.137 39.137 0 0 1 3.491 12.355l-.657-1.095a5.849 5.849 0 0 1 .881-7.153l1.309-1.309c1.1-1.1 2.889-1.1 3.988 0l2.884 2.884a2.83 2.83 0 0 1 .464 3.378l-1.084 1.925a.213.213 0 0 0 .035.255l6.421 6.421a.216.216 0 0 0 .257.034l1.922-1.083.001-.001a2.832 2.832 0 0 1 3.378.464l2.885 2.886c1.1 1.1 1.1 2.889 0 3.988l-1.367 1.366a5.848 5.848 0 0 1-4.142 1.706zM7.018 3.973c-.21 0-.42.08-.58.24L5.129 5.521a3.85 3.85 0 0 0-.58 4.708l.657 1.095a37.13 37.13 0 0 0 13.389 13.107l.126.071c1.526.873 3.446.626 4.672-.602l1.367-1.366a.82.82 0 0 0 0-1.16l-2.885-2.886a.823.823 0 0 0-.983-.134l-1.922 1.083a2.222 2.222 0 0 1-2.652-.363l-6.421-6.421a2.218 2.218 0 0 1-.363-2.651l1.084-1.924a.824.824 0 0 0-.135-.982L7.598 4.213a.818.818 0 0 0-.58-.24z"/></svg> 
+            (563) 547-2220
+    </section>
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>
+              <a class="logo-link" href="/">
+                <img src="images/uitd-logo.png" alt="Upper Iowa Tool & Custom Molding Logo" width="50%" height="50%">
+              </a>
+            </h1>
+            <p>Upper Iowa Tool & Die Custom Mold & Tooling provides the best custom injection molding services at an affordable cost</p>
+            <!-- <a class="secondary-btn" href="services.html">Learn More</a> -->
+            <a class="primary-btn" href="mailto:alex.fortune@upperiowatoolanddie.com?cc=scott.fortune@upperiowatoolanddie.com&subject=Injection Mold Quote Request&body=Tell Us About Your Project">Get A Quote</a>
+        </div>
+        <div class="hero-image">
+          <picture>
+            <source 
+              srcset="images/hero-image-blue.png"
+              media="(min-width: 1550px)"
+            />
+            <source 
+              srcset="images/hero-image-blue-500.png"
+              media="(min-width: 1024px)"
+            />
+            <img 
+              src="images/hero-image-blue-400.png" 
+              alt="Collage of Machines"
+            />
+          </picture>
+        </div>
+    </section>
+</header>
+
+<style>
+	:root {
+		--link-gradient: linear-gradient(45deg, #4f39fa, #da62c4 30%, var(--color-border) 60%);
+        --primary-button-color: #212ead;
+	}
+
+    .hero-section {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contact-section {
+        padding: 20px 0;
+        font-family: 'Archivo', sans-serif;
+        color: #fff;
+        text-align: center;
+        background-color: #212ead;
+    }
+
+    .contact-section .separator {
+        padding: 0 10px;
+    }
+
+    .hero-section .hero-content {
+        flex: 1 1 50%;
+    }
+
+    .hero-section .hero-content h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 72px;
+        text-align: center;
+        color: var(--primary-color);
+    }
+
+    .hero-section .hero-content img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .hero-section .hero-content p {
+        width: 65%;
+        margin: -10px auto 50px auto;
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+        color: #222;
+    }
+
+    .hero-section .hero-content {
+        text-align: center;
+    }
+
+    .hero-section .hero-image {
+        flex: 1 1 50%;
+        display: flex;
+        justify-content: end;
+    }
+
+    picture {
+        margin-bottom: -5px;
+    }
+
+    .hero-section .hero-content a {
+        display: inline-block;
+        margin-right: 15px;
+        font-size: 18px;
+        padding: 10px 15px;
+        border-radius: 6px;
+    }
+
+    .hero-section .hero-content a.logo-link {
+        border: 0 none;
+        padding: 0;
+    }
+
+    .primary-btn {
+        font-weight: 400;
+        color: #FFF;
+        border: 2px solid var(--primary-button-color);
+        background-color: var(--primary-button-color);
+        transition: all 0.5s ease;
+    }
+
+    .primary-btn:hover {
+        color: #01d414;
+        background-color: #172074;
+        border-color: #172074;
+    }
+
+    svg {
+        display: inline-block;
+        vertical-align: bottom;
+    }
+
+    @media (max-width: 1550px) {
+        .hero-section .hero-content img {
+            width: 65%;
+            height: 65%;
+        }
+
+        .hero-section .hero-content p {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .hero-section .hero-content img {
+            width: 75%;
+            height: 75%;
+        }
+    }
+
+
+    @media (max-width: 1024px) {
+        .hero-section .hero-image {
+            display: none;
+        }
+
+        .hero-section .hero-content {
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }
+
+        .hero-section .hero-content img {
+            width: 60%;
+            height: 60%;
+        }
+    }
+</style>
