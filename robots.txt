@@ -1,2 +1,3 @@
 user-agent: *
 disallow: 
+sitemap: https://uitd-injection-mold.vercel.app/sitemap.xml
