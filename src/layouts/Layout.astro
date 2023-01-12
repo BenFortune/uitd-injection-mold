@@ -4,6 +4,9 @@ export interface Props {
 }
 
 const { title } = Astro.props;
+import { inject } from '@vercel/analytics';
+
+inject();
 ---
 
 <!DOCTYPE html>
