@@ -11,15 +11,10 @@ function getConnectionSpeed() {
 }
 
 function sendToAnalytics(metric, options) {
-  const page = Object.entries(options.params).reduce(
-    (acc, [key, value]) => acc.replace(value, `[${key}]`),
-    options.path,
-  );
-
   const body = {
     dsn: options.analyticsId,
     id: metric.id, 
-    page,
+    page: options.path,
     href: location.href,  
     event_name: metric.name, 
     value: metric.value.toString(),
