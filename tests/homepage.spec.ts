@@ -61,6 +61,6 @@ test.describe('Homepage', () => {
     test('Footer', async ({page}) => {
         const footer = page.locator('footer');
 
-        await expect(footer).toHaveText('© 2022 - Upper Iowa Tool & Die Custom Mold & Tooling | (563) 547-2220')
+        await expect(footer).toHaveText('© 2023 - Upper Iowa Tool & Die Custom Mold & Tooling | (563) 547-2220')
     })
 });
