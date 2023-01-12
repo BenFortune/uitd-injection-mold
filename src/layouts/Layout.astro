@@ -4,9 +4,6 @@ export interface Props {
 }
 
 const { title } = Astro.props;
-import { inject } from '@vercel/analytics';
-
-inject();
 ---
 
 <!DOCTYPE html>
@@ -36,6 +33,7 @@ inject();
 	  analyticsId,
 	});
 </script>
+<script defer src="/_vercel/insights/script.js"></script>
 <style>
 	:root {
 		--font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
