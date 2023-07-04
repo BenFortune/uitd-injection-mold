@@ -36,13 +36,13 @@ test.describe('Homepage', () => {
         const measuringSectionHeader = measuringSection.locator('h2');
         const measuringSectionContent = measuringSection.locator('p')
 
-        await expect(designSectionHeader).toHaveText('Mold Design');
+        await expect(designSectionHeader).toHaveText('Injection Mold Design');
         await expect(designSectionContent).toHaveText('While injection molding is the final product, the process starts with tooling. Our tool makers can fabricate the tool to produce the injection molded part.');
 
-        await expect(productionSectionHeader).toHaveText('Mold Production');
+        await expect(productionSectionHeader).toHaveText('Injection Mold Production');
         await expect(productionSectionContent).toHaveText('Our Cincinnati Milacron MH400 is capable of handling most injection mold jobs big and small. If your injection molded part requires annealing we can perform that in our JP Industrial Oven.')
         
-        await expect(measuringSectionHeader).toHaveText('Mold Measuring');
+        await expect(measuringSectionHeader).toHaveText('Injection Mold Measuring');
         await expect(measuringSectionContent).toHaveText('Need PPAP services? Our team of CMM trained technicians can provide the data needed to assure the injection molded part meets your specific tolerances.')
     });
 
