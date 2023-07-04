@@ -11,7 +11,7 @@ const { title, body, imageSrc, altText } = Astro.props;
 
 <li>
     <section class="section-image-wrapper">
-        <img src={imageSrc} alt={altText}>
+        <img src={imageSrc} alt={altText} width="84" height="84">
     </section>
     <h2>{title}</h2>
     <p>{body}</p>
@@ -38,14 +38,9 @@ const { title, body, imageSrc, altText } = Astro.props;
         background: #FFF none;
     }
 
-    li .section-image-wrapper img {
-        display: block;
-        width: 84px;
-        height: 84px;
-    }
-
     li h2 {
         margin-bottom: 20px;
+        line-height: 1.1;
         font-family: 'Lalezar', sans-serif;
         font-size: 48px;
         color: #FFF
