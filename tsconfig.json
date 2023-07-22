@@ -1,3 +1,7 @@
 {
-  "extends": "astro/tsconfigs/strict"
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    // TODO: update with the upgrade to TS 5.0
+    "ignoreDeprecations": "5.0",
+  }
 }
