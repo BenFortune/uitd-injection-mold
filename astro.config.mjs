@@ -5,7 +5,12 @@ import vercel from '@astrojs/vercel/static'
 // https://astro.build/config
 export default defineConfig({
   adapter: vercel({
-    analytics: true
+    webAnalytics: {
+      enabled: true,
+    },
+    speedInsights: {
+      enabled: true,
+    }
   }),
   integrations: [sitemap()],
   site: 'https://upperiowatoolanddieinjectionmoldingandtooling.com'
