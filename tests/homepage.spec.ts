@@ -7,7 +7,7 @@ test.describe('Homepage', () => {
 
     test('Header', async ({page}) => {
         await expect(page).toHaveTitle("Upper Iowa Tool & Die Custom Mold & Tooling | Home");
-        
+
         const contactSection = page.locator('.contact-section');
         const headerText = page.locator('.hero-content p');
         const logo = page.locator('.hero-content img');
@@ -30,7 +30,7 @@ test.describe('Homepage', () => {
 
         const productionSection = page.locator('.services-section li').nth(1);
         const productionSectionHeader = productionSection.locator('h2');
-        const productionSectionContent = productionSection.locator('p'); 
+        const productionSectionContent = productionSection.locator('p');
 
         const measuringSection = page.locator('.services-section li').last();
         const measuringSectionHeader = measuringSection.locator('h2');
@@ -41,7 +41,7 @@ test.describe('Homepage', () => {
 
         await expect(productionSectionHeader).toHaveText('Injection Mold Production');
         await expect(productionSectionContent).toHaveText('Our Cincinnati Milacron MH400 is capable of handling most injection mold jobs big and small. If your injection molded part requires annealing we can perform that in our JP Industrial Oven.')
-        
+
         await expect(measuringSectionHeader).toHaveText('Injection Mold Measuring');
         await expect(measuringSectionContent).toHaveText('Need PPAP services? Our team of CMM trained technicians can provide the data needed to assure the injection molded part meets your specific tolerances.')
     });
@@ -61,6 +61,6 @@ test.describe('Homepage', () => {
     test('Footer', async ({page}) => {
         const footer = page.locator('footer');
 
-        await expect(footer).toHaveText('© 2023 - Upper Iowa Tool & Die Custom Mold & Tooling | (563) 547-2220')
+        await expect(footer).toHaveText('© 2024 - Upper Iowa Tool & Die Custom Mold & Tooling | (563) 547-2220')
     })
 });
