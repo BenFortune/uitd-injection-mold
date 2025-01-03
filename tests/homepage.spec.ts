@@ -1,4 +1,4 @@
-import {test, expect} from '@playwright/test';
+import { expect, test } from '@playwright/test';
 
 test.describe('Homepage', () => {
     test.beforeEach(async ({ page }) => {
@@ -61,6 +61,6 @@ test.describe('Homepage', () => {
     test('Footer', async ({page}) => {
         const footer = page.locator('footer');
 
-        await expect(footer).toHaveText('© 2024 - Upper Iowa Tool & Die Custom Mold & Tooling | (563) 547-2220')
+        await expect(footer).toHaveText('© 2025 - Upper Iowa Tool & Die Custom Mold & Tooling | (563) 547-2220')
     })
 });
