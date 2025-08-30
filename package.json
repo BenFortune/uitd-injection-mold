@@ -10,6 +10,9 @@
     "astro": "astro",
     "test:e2e": "npx playwright test"
   },
+  "engines": {
+    "node": ">=23.0.0"
+  },
   "dependencies": {
     "@astrojs/sitemap": "^2.0.1",
     "@astrojs/vercel": "3.8.0",
